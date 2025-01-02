@@ -1,7 +1,12 @@
 import react from "react";
+import { useState } from "react";
+import Modal from "./Modal";
+
 
 const Card = ({ book }) => {
-    console.log(book)
+  const [show,setShow] = useState(false);
+const [bookItem,setBookItem] = useState({});
+    // console.log(book)
     return (
         <>
             {
@@ -14,14 +19,14 @@ const Card = ({ book }) => {
                     // {
                         return (
                             <>
-                            <div className="card">
+                            <div className="card" onClick={()=>{setShow(true);setBookItem(item)}}>
                                 <img src={thumbnail} alt="" />
                                 <div className="bottom">
                                     <h3 className="title">{item.volumeInfo.title}</h3>
                                     <p className="author">{authors} ( {data} )</p>
                                 </div>
                             </div>
-                             
+                             <Modal show={show} item={bookItem} onClose={()=>setShow(false)} />
                             </>
                         )
                     // }
