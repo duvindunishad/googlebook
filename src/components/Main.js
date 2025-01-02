@@ -40,7 +40,7 @@ const Main = () => {
                             onKeyPress={handleKeyPress}
                         />
                         <button onClick={searchBook}>
-                            <i className="fas fa-search"></i> Search
+                             Search
                         </button>
                     </div>
                 </div>
