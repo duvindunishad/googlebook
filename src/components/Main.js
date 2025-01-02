@@ -9,7 +9,7 @@ const Main = () => {
     const searchBook = () => {
         const API_URL = process.env.REACT_APP_BOOKS_API_URL;
         const API_KEY = process.env.REACT_APP_API_KEY;
-
+// here i separate the keys for add to the env file
         axios
             .get(`${API_URL}?q=${search}&key=${API_KEY}&maxResults=40`)
             .then((res) => setBookData(res.data.items))

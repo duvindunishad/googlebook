@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="app-header">
             <div className="header-content">
-                <h1>My React App</h1>
+                <h1>Google Books</h1>
                 <nav>
                     <ul className="nav-links">
                         <li><a href="/">Home</a></li>

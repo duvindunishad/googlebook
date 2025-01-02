@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-:root{
-    --primary-color:rgb(4, 72, 150);
-    --secondary-color:rgb(117, 204, 255);
-    --my-blue:#218cff;
+
+:root {
+    --primary-color: rgb(4, 72, 150);
+    --secondary-color: rgb(117, 204, 255);
+    --my-blue: #218cff;
 }
-body{
-    /* background-color: var(--primary-color); */
+
+body {
     background-color: white;
 }
-html{
+
+html {
     font-size: 75.5%;
 }
+
 .header {
     width: 100%;
     height: auto;
@@ -103,25 +107,25 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; 
-    margin: 20px 0; 
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .search input {
     outline: none;
-    border: 2px solid #ccc; 
-    border-radius: 5px; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
     width: 350px;
     height: 40px;
-    padding: 0 1rem; 
+    padding: 0 1rem;
     font-size: 16px;
     font-weight: 500;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search input:focus {
-    border-color: var(--my-blue); 
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    border-color: var(--my-blue);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .search button {
@@ -129,26 +133,27 @@ html{
     outline: none;
     border: none;
     background-color: var(--my-blue);
-    color: #fff; 
+    color: #fff;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 5px; 
+    border-radius: 5px;
     height: 40px;
     padding: 0 1rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search button:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .container {
-    width: 90%; 
-    max-width: 1200px; 
-    margin: 25px auto; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     box-sizing: border-box;
 }
 
@@ -156,38 +161,38 @@ html{
     cursor: pointer;
     background-color: white;
     border-radius: 1rem;
-    padding: 1rem; 
+    padding: 1rem;
     margin-bottom: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     position: relative;
 }
 
 .card:hover {
-    transform: translateY(-5px); 
-    background-color: rgba(255, 255, 255, 0.9); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
     width: 100%;
-    height: 220px; 
+    height: 220px;
     border-radius: 1rem 1rem 0 0;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .card .bottom {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem; 
+    margin-top: 1rem;
 }
 
 .card .bottom .title {
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 20px; 
-    color: var(--text-color-primary); 
+    margin-bottom: 20px;
+    color: var(--text-color-primary);
     margin-bottom: 50px;
 }
 
@@ -198,39 +203,38 @@ html{
     right: 10px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-size: 14px; 
+    font-size: 14px;
     font-weight: bold;
-    padding: 0.5rem; 
-    border-radius: 0.5rem; 
-    text-align: center; 
-    
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
 }
 
-/* update the over lay */
+/* Update for overlay */
 .overlay {
     min-height: 100vh;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .overlay-inner {
     background: #fff;
     width: 80%;
-    max-width: 700px; 
-    height: auto; 
+    max-width: 700px;
+    height: auto;
     padding: 2rem;
     position: relative;
     box-sizing: border-box;
-    border-radius: 10px; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
-    overflow: auto; 
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: auto;
     font-size: 1.2rem;
 }
 
@@ -243,67 +247,67 @@ html{
     border: none;
     font-size: 20px;
     background-color: transparent;
-    color: #333; 
+    color: #333;
     transition: color 0.3s ease;
 }
 
 .overlay-inner .close:hover {
-    color: #ff0000; 
+    color: #ff0000;
 }
 
 .overlay-inner .inner-box {
     margin-top: 20px;
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     align-items: center;
 }
 
 .overlay-inner .inner-box img {
-    border-radius: 8px; 
+    border-radius: 8px;
     width: 150px;
     height: 200px;
-    object-fit: cover; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .overlay-inner .inner-box h3 {
     margin-top: 10px;
-    color: #28a745; 
+    color: #28a745;
     font-size: 1.5rem;
 }
 
 .overlay-inner .inner-box h4 {
-    color: var(--my-blue); 
+    color: var(--my-blue);
     font-size: 1.2rem;
 }
 
 .overlay-inner .inner-box button {
     outline: none;
     border: none;
-    width: 120px; 
-    border-radius: 8px; 
-    background-color: var(--my-blue); 
+    width: 120px;
+    border-radius: 8px;
+    background-color: var(--my-blue);
     color: #fff;
     font-weight: bold;
-    padding: 0.5rem 0.7rem; 
+    padding: 0.5rem 0.7rem;
     font-size: 1rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .overlay-inner .inner-box button:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-inner .description {
     margin-top: 2rem;
     text-align: justify;
-    font-size: 1rem; 
-    line-height: 1.6; 
-    color: #555; 
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
-/* header style */
+/* Header style */
 .app-header {
     background-color: var(--my-blue);
     color: white;
@@ -335,7 +339,7 @@ html{
     text-decoration: underline;
 }
 
-/* footer */
+/* Footer */
 .library-footer {
     background-color: var(--my-blue);
     color: white;
@@ -409,7 +413,7 @@ html{
     padding-top: 1rem;
 }
 
-/* about us */
+/* About us */
 .about-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -441,7 +445,8 @@ html{
     list-style-type: disc;
     margin-left: 1.5rem;
 }
-/* contact us */
+
+/* Contact us */
 .contact-container {
     max-width: 900px;
     margin: 3rem auto;
@@ -494,5 +499,39 @@ html{
     color: #023e8a;
 }
 
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 1rem;
+    }
 
+    .header-content {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 
+    .row h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar input {
+        width: 80%;
+    }
+
+    .search-bar button {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+    }
+}
