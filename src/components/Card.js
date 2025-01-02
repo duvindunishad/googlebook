@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <>
       <div className='card'>
-        <img src='./images/book.png' alt=''/>
+        <img src='./images/book.jpg' alt=''/>
 
         <div className='bottom'>
             <h3 className='title'>React Js</h3>
