@@ -31,7 +31,7 @@ const Main = () => {
         </div>
       </div>
       <div className='container'>
-        <Card/>
+        <Card book={bookData} />
       </div>
     </>
   );

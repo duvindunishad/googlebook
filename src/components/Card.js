@@ -1,16 +1,23 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({book}) => {
+  console.log(book);
   return (
     <>
-      <div className='card'>
-        <img src='./images/book.jpg' alt=''/>
+    {book.map((item)=>{
+      let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
+      return(
+        <div className='card'>
+        <img src={thumbnail} alt=''/>
 
         <div className='bottom'>
             <h3 className='title'>React Js</h3>
             <p className='amount'>&#8377; 3200</p>
         </div>
       </div>
+      )
+    })}
+
     </>
   );
 }
