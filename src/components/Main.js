@@ -23,18 +23,17 @@ const Main = () => {
 
     return (
         <>
-            <div className='header'>
-                <div className='row1'>
-                    <h1>
+        <div className='header'>
+            <div className='header-content'>
+                <div className='row'>
+                <h1>
                         A room without books is like <br /> a body without a soul
-                    </h1>
-                </div>
-                <div className='row2'>
-                    <h2>Find your book</h2>
-                    <div className='search'>
+                    </h1><br/>
+                    <h2>Find Your Favorite Book</h2>
+                    <div className='search-bar'>
                         <input
                             type='text'
-                            placeholder='Search for books'
+                            placeholder='Search for books...'
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                             onKeyPress={handleKeyPress}
@@ -43,13 +42,14 @@ const Main = () => {
                             <i className="fas fa-search"></i> Search
                         </button>
                     </div>
-                    <img src='./images/bg2.png' alt='' />
                 </div>
             </div>
-            <div className='container'>
-                <Card book={bookData} />
-            </div>
-        </>
+        </div>
+        <div className='container'>
+            <Card book={bookData} />
+        </div>
+    </>
+    
     );
 };
 
