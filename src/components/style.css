@@ -306,7 +306,15 @@ html {
     line-height: 1.6;
     color: #555;
 }
+@media (max-width: 600px) {
+    .inner-box {
+        flex-direction: column;
+    }
 
+    .thumbnail {
+        margin-bottom: 15px;
+    }
+}
 /* Header style */
 .app-header {
     background-color: var(--my-blue);
