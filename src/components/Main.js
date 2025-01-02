@@ -11,7 +11,7 @@ const Main = () => {
             <h2>Find your book</h2>
             <div className='search'>
                 <input type='text' placeholder='Search for books'/>
-                <button><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                <button><i class="fas fa-search"></i></button>
             </div>
         </div>
       </div>
