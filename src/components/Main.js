@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card';
 
 const Main = () => {
   return (
@@ -13,9 +14,12 @@ const Main = () => {
                 <input type='text' placeholder='Search for books'/>
                 <button><i class="fas fa-search"></i></button>
             </div>
+            <img src='./images/bg2.png' alt=''/>
         </div>
       </div>
-
+      <div className='container'>
+        <Card/>
+      </div>
     </>
   );
 }
