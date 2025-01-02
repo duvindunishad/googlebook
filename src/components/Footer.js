@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-column">
                     <h3>Contact Us</h3>
-                    <p>Email: support@libraryweb.com</p>
+                    <p>Email: duvindunishad@gmail.com</p>
                     <p>Phone: +1-800-555-BOOK</p>
                     <p>Address: 123 Library Lane, Booktown</p>
                 </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Library Web. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Duvindu Nishad. All Rights Reserved.</p>
             </div>
         </footer>
     );
