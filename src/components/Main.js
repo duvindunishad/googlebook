@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import Card from './Card';
 import axios from 'axios';
 
@@ -7,12 +7,13 @@ const Main = () => {
     const [bookData, setBookData] = useState([]);
 
     const searchBook = () => {
+        const API_URL = process.env.REACT_APP_BOOKS_API_URL;
+        const API_KEY = process.env.REACT_APP_API_KEY;
+
         axios
-            .get(
-                `https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyADEtEvsddJThNHElf2RkUcvBCKjH6RBps&maxResults=40`
-            )
+            .get(`${API_URL}?q=${search}&key=${API_KEY}&maxResults=40`)
             .then((res) => setBookData(res.data.items))
-            .catch((err) => console.log(err));
+            .catch((err) => console.error('Error fetching book data:', err));
     };
 
     const handleKeyPress = (e) => {
