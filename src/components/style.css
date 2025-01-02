@@ -70,6 +70,7 @@ html{
     font-weight: bold;
 }
 .search button{
+    cursor:pointer;
     outline: none;
     border: none;
     height: 35px;
